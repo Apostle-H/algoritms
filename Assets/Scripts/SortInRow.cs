@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class algoritms2 : MonoBehaviour
+public class SortInRow : MonoBehaviour
 {
     [SerializeField] private Transform[] cubes;
     [SerializeField] private float spacing;
