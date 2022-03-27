@@ -10,7 +10,7 @@ public class RoomsActions : MonoBehaviour
     [SerializeField] private Transform roomsPanel;
     [SerializeField] private GameObject roomPrefab;
 
-    [SerializeField] private TextMeshProUGUI input;
+    [SerializeField] private TMP_InputField input;
 
     public void AddRoom()
     {
@@ -85,7 +85,7 @@ public class RoomsActions : MonoBehaviour
         }
     }
 
-    public void StrangeChange()
+    public void MinimumRoomNumChangeLastWithAnimal()
     {
         int lastHabitantWithAnimal = -1;
 
@@ -112,9 +112,6 @@ public class RoomsActions : MonoBehaviour
             minimalRoomNum = rooms[i].number;
             habitantWithMinimalRoomNum = i;
         }
-
-        Debug.Log(lastHabitantWithAnimal);
-        Debug.Log(habitantWithMinimalRoomNum);
 
         string tempHabitant = rooms[habitantWithMinimalRoomNum].habitantName;
         rooms[habitantWithMinimalRoomNum].habitantName = rooms[lastHabitantWithAnimal].habitantName;

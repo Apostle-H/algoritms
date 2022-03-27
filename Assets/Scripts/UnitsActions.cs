@@ -7,15 +7,13 @@ public class UnitsActions : MonoBehaviour
 {
     public static List<Unit> units = new List<Unit>();
 
-    [SerializeField] private TextMeshProUGUI damageInput;
-    [SerializeField] private TextMeshProUGUI hideInput;
-    [SerializeField] private TextMeshProUGUI makeBossInput;
+    [SerializeField] private TMP_InputField input;
 
     public void HideDamaged()
     {
         int comparingValue;
 
-        if (!int.TryParse(damageInput.text, out comparingValue))
+        if (!int.TryParse(input.text, out comparingValue))
         {
             return;
         }
@@ -33,7 +31,7 @@ public class UnitsActions : MonoBehaviour
     {
         int comparingValue;
 
-        if (!int.TryParse(hideInput.text, out comparingValue))
+        if (!int.TryParse(input.text, out comparingValue))
             return;
 
         foreach (var unit in units)
@@ -47,9 +45,9 @@ public class UnitsActions : MonoBehaviour
 
     public void RevealAll()
     {
-        foreach (var unit in units)
+        for (int i = 0; i < units.Count; i++)
         {
-            unit.gameObject.SetActive(true);
+            units[i].gameObject.SetActive(true);
         }
     }
 
@@ -57,7 +55,7 @@ public class UnitsActions : MonoBehaviour
     {
         foreach (var unit in units)
         {
-            if (unit.unitName.ToLower() == makeBossInput.text.ToLower())
+            if (unit.gameObject.activeSelf && unit.unitName.ToLower() == input.text.ToLower())
             {
                 unit.unitName = "Boss";
                 unit.hp *= 3;

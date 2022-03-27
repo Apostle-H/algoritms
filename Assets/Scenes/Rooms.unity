@@ -797,7 +797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Strange change
+  m_text: Minimum room num change lasl with animal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -824,8 +824,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1406,7 +1406,7 @@ GameObject:
   - component: {fileID: 1090557988}
   - component: {fileID: 1090557987}
   m_Layer: 5
-  m_Name: StrangeChange
+  m_Name: MinimumRoomNumChangeLastWithAnimal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1478,7 +1478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1158750647}
         m_TargetAssemblyTypeName: RoomsActions, Assembly-CSharp
-        m_MethodName: StrangeChange
+        m_MethodName: MinimumRoomNumChangeLastWithAnimal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1693,7 +1693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomsPanel: {fileID: 1745848653}
   roomPrefab: {fileID: 90433143826305101, guid: 599cb5822a669d549b210068d0c991ee, type: 3}
-  input: {fileID: 1867136129}
+  input: {fileID: 696404857}
 --- !u!114 &1158750648
 MonoBehaviour:
   m_ObjectHideFlags: 0
